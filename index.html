@@ -1,277 +1,176 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>La Casa di Alice – Agriasilo, Continuità 3‑6, Centro Estivo</title>
-  <meta name="description" content="La Casa di Alice: agriasilo 3‑36 mesi, continuità 3‑6 anni e centro estivo a Crocetta del Montello (TV). Educare… naturalmente. Orari 7:00‑18:30." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --brand: #47c2a8;          /* verde acqua ispirazione volantino riquadri chiama */
-      --brand-dark:#279a86;      /* colore titoli */
-      --accent:#ff5252;          /* rosso tetto casetta */
-      --sun:#ffd54f;             /* giallo casa */
-      --ink:#1f2d3d;             /* testo */
-      /*--paper:#f6fffb;            sfondo chiaro */
-      background-image: url('sfondo.png');
-      background-repeat: repeat;
-      background-position: top;
-      background-attachment: scroll;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;color:var(--ink);font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;}
-    a{color:var(--brand)}
-    header{
-      position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e8f3ef;
-      backdrop-filter:saturate(180%) blur(8px)
-    }
-    .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-    .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-    .brand-title{font-family:Caveat, cursive;font-size:28px;line-height:1;color:var(--brand-dark)}
-    .nav ul{display:flex;gap:18px;list-style:none;padding:0;margin:0}
-    .nav a{display:block;padding:8px 10px;border-radius:999px;text-decoration:none;color:var(--ink);font-weight:500}
-    .nav a:hover{background:#e8f6f2}
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>La Casa di Alice - Agriasilo, Continuità 3-6, Centro Estivo</title>
+        <link href="https://fonts.googleapis.com/ccs2?family=Poppins:wght@300;400;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+          <header>
+            <div class="barra">
+                <a class="logo-titolo" href="#top">
+                <img src="/home/kali/Desktop/ImmaginiSito/logonudo7.png" alt="Logo" class="logo">
+                <span class="titolo">La Casa di Alice</span>
+                </a>
+                <button class="menu-toggle" aria-label="Apri menu">☰</button>
+                <ul class="menu">
+                    <li><a href="#cuore" class="link">Il Cuore</a></li>
+                    <li><a href="#filosofia" class="link">Filosofia</a></li>
+                    <li><a href="#servizi" class="link">Servizi</a></li>
+                    <li><a href="#numeri" class="link">I Numeri</a></li>
+                    <li><a href="#galleria" class="link">Galleria</a></li>
+                    <li><a href="#contatti" class="link">Contatti</a></li>
+                </ul>
+            </div>
+          </header>
+          <main id="top" class="wrap">
+            <section class="hero" aria-label="Benvenuti">
+                <div class="card">
+                    <h1>Educare... Naturalmente</h1>
+                    <p>Casa di Alice, un luogo dove la natura diventa maestra e compagna di crescita.
+                       Ogni giornata è fatta di scoperte, profumi, colori e sorrisi.
+                       Tra alberi, animali e piccoli semi che germogliano, i bambini imparano a conoscere sé stessi e il mondo con curiosità e meraviglia.
+                       Offriamo un percorso educativo che unisce:</p> 
+                       <p class ="parole-importanti"> agrinido (3–36 mesi)</p>
+                       <p class="parole-importanti"> continuità (3–6 anni)</p>
+                       <p class="parole-importanti"> centro estivo</p>
+                       <p> in un ambiente familiare, sereno e pieno di vita.</p>
+                    <p class="lead">Accreditato Regione Veneto (micronido)</p>
+                    <div class="cta">
+                    </div>
+                </div>
+                <div class="card">
+                    <picture>
+                        <!-- AGGIUNGERE FOTO--> <img src="/home/kali/Desktop/ImmaginiSito/bambini.png">
+                    </picture>
+                </div>
+            </section>
 
-    /* Hero */
-    .hero{display:grid;grid-template-columns:1.1fr 0.9fr;gap:28px;align-items:center;padding:54px 0}
-    .hero h1{font-family:Caveat,cursive;font-size:56px;margin:0 0 8px;color:var(--brand-dark)}
-    .hero p.lead{font-size:20px;margin:0 0 18px}
-    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 26px}
-    .badge{background:#fff;border:1px solid #dff2ec;border-radius:999px;padding:8px 14px;font-weight:600}
-    .cta{display:flex;flex-wrap:wrap;gap:12px}
-    .btn{appearance:none;border:0;border-radius:14px;padding:12px 18px;font-weight:700;cursor:pointer;text-decoration:none}
-    .btn.primary{background:var(--brand);color:#fff}
-    .btn.primary:hover{background:var(--brand-dark)}
-    .btn.ghost{background:#fff;border:2px solid var(--brand);color:var(--brand)}
+             <section id="cuore">
+                <div class="grid">
+                    <div class="card" style="grid-column:span 7">
+                        <h2>Il Cuore</h2>
+                            <p>Roberta e Roberto hanno aperto La Casa di Alice nel maggio 2003 a Cornuda, colmando un vuoto nei servizi per le famiglie.
+                                Nel 2008, grazie alla collaborazione con l’Amministrazione Comunale, la struttura si trasferisce a Crocetta del Montello, in località Nogarè, dove prende vita un luogo unico nel suo genere: laico, accogliente e familiare, pensato per permettere ai genitori che lavorano di affidare i propri bambini in tutta serenità.
 
-    /* Sections */
-    section{padding:56px 0;border-top:1px solid #e8f3ef}
-    h2{font-family:Caveat,cursive;font-size:40px;margin:0 0 18px;color:var(--brand-dark)}
-    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
-    .card{background:#fff;border:1px solid #e6f2ee;border-radius:20px;padding:18px;box-shadow:0 8px 22px rgba(20,90,70,0.06)}
+                                Gli spazi sono caldi, colorati e a misura di bambino; le educatrici sono attente, dolci e qualificate, capaci di ascoltare e valorizzare ogni esigenza.
+                                La Casa di Alice non chiude mai del tutto: anche d’estate accoglie i bambini con laboratori, attività e compiti pomeridiani, mantenendo sempre vivo il legame educativo.
+                                Nel corso degli anni, la struttura ha promosso incontri formativi e conferenze aperte a genitori ed educatori, ospitando personalità di rilievo come Paolo Crepet e Roberta Bruzzone. Questi momenti di confronto hanno rappresentato una straordinaria occasione di crescita e riflessione sui temi dell’infanzia, della genitorialità e del benessere emotivo.
+                                Oggi, come allora, La Casa di Alice rimane un punto di riferimento per chi crede in un’educazione fatta di cura, empatia e natura — un luogo dove i bambini crescono sereni, accolti e liberi di scoprire il mondo con meraviglia.
+                            </p>
+                    </div>
+                    <div class="card" style="grid-column:span 5">
+                    <img src="https://images.unsplash.com/photo-1566921718657-0b4f1e019f75?q=80&w=1200&auto=format&fit=crop" alt="Cerchio dei bambini" style="width:100%;height:320px;object-fit:cover;border-radius:12px" />
+                </div>
+            </section>
 
-    /* Services */
-    .services .card ul{margin:0;padding-left:18px}
-    .services .card li{margin:8px 0}
+            <section id="filosofia">
+                <div class="grid">
+                    <div class="card" style="grid-column:span 12">
+                        <h2>La Filosofia</h2>
+                        <p>L’ambiente, le persone e le situazioni che circondano i bambini hanno sempre lasciato segni importanti: il nostro lavoro è la nostra passione e ha l’obiettivo di stabilire relazioni sincere, fatte di ascolto e di empatia, e di promuovere il benessere che solo una relazione profonda permette di realizzare. <strong>Cura, Amore e Natura</strong>: sono le cose che non mancheranno mai ai vostri piccoli.</p>
+                    </div>
+                </div>
+            </section>
 
-    /* Numbers */
-    .numbers .pill{background:#fff;border:1px solid #e6f2ee;border-radius:16px;padding:12px 14px;margin:8px 0;font-weight:600}
+            <section id="servizi" class="services">
+                <div class="grid">
+                    <div class="card" style="grid-column:span 7">
+                        <h2>Servizi</h2>
+                        <ul>
+                            <li>Assistenza malattia diurna</li>
+                            <li>Servizio di assistenza domiciliare</li>
+                            <li>Consulenze psicopedagogiche</li>
+                            <li>Corsi di formazione per i genitori</li>
+                            <li>Centro estivo (anche per bambini esterni)</li>
+                            <li>Incontri  con specialist su tematiche di famiglia e infanzia</li>
+                            <li>Affitto sala 150m² per feste di compleanno ed eventi (con animazione)</li>
+                            <li>Assistenza domiciliare post parto</li>
+                            <li>Massaggio del bimbo/a</li>
+                            <li>Laboratori nel fine settimana su iscrizione</li>
+                            <li>Gite didattiche</li>
+                        </ul>
+                    </div>
+                    <div class="card" style="grid-column:span 5">
+                        <div class="gallery">
+                            <!--AGGIUNGERE IMMAGINI-->
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    /* Gallery */
-    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .gallery img{width:100%;height:220px;object-fit:cover;border-radius:18px}
+            <section id="numeri" class="numbers">
+                <div class="grid">
+                    <div class="card" style="grid-column:span 12">
+                        <h2>I Numeri</h2>
+                        <p class="pill">Personale sempre formato e aggiornato</p>
+                        <p class="pill">Micronido (3-36 mesi) accreditato in Regione Veneto con 3 sezioni: lattanti, semidivezzi, divezzi</p>
+                        <p class="pill">Continuità (3-6 anni) con maestre abilitate all'insegnamento e laureate in psicologia e pedagogia</p>
+                        <p class="pill">Equipe: pedagogiste, educatrici, ausiliarie, psicologhe, logopediste, puericultrici, educatori professionali</p>
+                    </div>
+                </div>
+            </section>
 
-    /* Footer */
-    footer{background:#0f2a24;color:#eafff7;padding:40px 0;margin-top:40px}
-    footer a{color:#c7fff1}
+            <section id="galleria">
+                <div class="grid">
+                    <div class="card" style="grid-column:span 12;">
+                        <h2>Galleria</h2>
+                    </div>
+                </div>
+            </section>
 
-    /* Simple SVG logo */
-    .logo{width:54px;height:54px}
+            <section id="contatti">
+                <div class="grid">
+                    <div class="card" style="grid-column:span 6">
+                        <h2>Contatti</h2>
+                        <p><strong>Indirizzo:</strong> Via Caodevilla, 8/C - 31035 Crocetta del Montello (TV) - Nogarè</p>
+                        <p><strong>Telefono:</strong> <a class="tel" href="tel:+393387042993">Roberta 3387042993</a> • <a class="tel" href="tel:+393473494966">Francesco 3473494966</a></p>
+                        <p><strong>Orari:</strong> Lunedì - Venerdì, 7:00 - 18:30</p>
+                        <div class="cta">
+                            <a class="btn primary" href="tel:+393387042993">Chiama ora</a>
+                            <a class="btn ghost" href="mailto:nidocasadialice@gmail.com">Invia email</a>
+                        </div>
+                    </div>
+                    <div class="card" style="grid-column:span 6">
+                        <iframe title="Mappa" src="https://www.google.com/maps?q=Via%20Caodevilla%2C%208%2FC%2C%20Crocetta%20del%20Montello&output=embed" width="100%" height="340" style="border:0;border-radius: 12px;">
+                        </iframe>    
+                    </div>
+                </div>
+            </section>
+          </main>
 
-    /* Responsive */
-    @media(max-width:900px){
-      .hero{grid-template-columns:1fr}
-    }
-    @media(max-width:700px){
-      .nav ul{display:none}
-      .gallery{grid-template-columns:1fr 1fr}
-    }
-    @media(max-width:480px){
-      .hero h1{font-size:44px}
-      .gallery{grid-template-columns:1fr}
-    }
-  </style>
-  <script>
-    // Smooth scroll
-    document.addEventListener('DOMContentLoaded',()=>{
-      document.querySelectorAll('a[href^="#"]').forEach(a=>{
-        a.addEventListener('click',e=>{
-          const id=a.getAttribute('href');
-          if(id.length>1){
-            e.preventDefault();
-            document.querySelector(id)?.scrollIntoView({behavior:'smooth'});
-          }
-        });
-      });
-    });
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ChildCare",
-    "name": "La Casa di Alice",
-    "slogan": "Educare… naturalmente",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Via Caodevilla, 8/C",
-      "addressLocality": "Crocetta del Montello - Nogarè",
-      "postalCode": "31035",
-      "addressRegion": "TV",
-      "addressCountry": "IT"
-    },
-    "telephone": "+39 338 7042993",
-    "email": "nidocasadialice@gmail.com",
-    "openingHours": "Mo-Fr 07:00-18:30"
-  }
-  </script>
-</head>
-<body>
-  <header>
-    <div class="wrap nav">
-      <a class="brand" href="#top">
-        <!-- Mini SVG logo inspired by the flyer (non ufficiale) -->
-        <svg class="logo" viewBox="0 0 100 100" aria-hidden="true">
-          <rect x="20" y="40" width="60" height="45" rx="6" fill="var(--sun)" stroke="#efc33f"/>
-          <polygon points="15,42 50,15 85,42" fill="var(--accent)"/>
-          <rect x="45" y="58" width="12" height="27" rx="3" fill="#2bb39a"/>
-          <circle cx="32" cy="62" r="6" fill="#fff"/>
-          <circle cx="68" cy="62" r="6" fill="#fff"/>
-        </svg>
-        <span class="brand-title">La Casa di Alice</span>
-      </a>
-      <ul>
-        <li><a href="#cuore">Il Cuore</a></li>
-        <li><a href="#filosofia">Filosofia</a></li>
-        <li><a href="#servizi">Servizi</a></li>
-        <li><a href="#numeri">I numeri</a></li>
-        <li><a href="#contatti">Contatti</a></li>
-      </ul>
-    </div>
-  </header>
+          <footer>
+            <div class="wrap">
+                <div style="display:flex;align-items:center;gap:14px;margin-bottom:8px">
+                    <img src="/home/kali/Desktop/ImmaginiSito/logonudo7.png" alt="Logo" class="logo">
+                    <strong>La Casa di Alice</strong>
+                </div>
+                <small>© <span id="year"></span> La Casa di Alice - Crocetta del Montello (TV). Tutti i diritti riservati.</small>
+                <br><small>Il sito utilizza Google Maps per mostrare la posizione. Alcuni dati possono essere condivisi con Google.</small>
+            </div>
+            <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+          </footer>
+          <!--piccolo script per menu a comparsa-->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const toggle = document.querySelector('.menu-toggle');
+                const menu = document.querySelector('.menu');
 
-  <main id="top" class="wrap">
-    <!-- HERO -->
-    <section class="hero" aria-label="Benvenuti">
-      <div>
-        <h1>Educare… naturalmente</h1>
-        <p class="lead">Agriasilo 3‑36 mesi • Continuità 3‑6 anni • Centro estivo a Crocetta del Montello (TV).</p>
-        <div class="badges">
-          <span class="badge">Accreditato Regione Veneto (micronido)</span>
-          <span class="badge">Orari lun‑ven 7:00‑18:30</span>
-          <span class="badge">Professionisti qualificati</span>
-        </div>
-        <div class="cta">
-          <a class="btn primary" href="tel:+393387042993">Chiama Roberta</a>
-          <a class="btn ghost" href="tel:+393473494966">Chiama Francesco</a>
-          <a class="btn ghost" href="mailto:nidocasadialice@gmail.com">Scrivici</a>
-        </div>
-      </div>
-      <div class="card">
-        <picture>
-          <!-- Sostituire con foto reali: qui mettiamo un riquadro segnaposto -->
-          <img src="https://images.unsplash.com/photo-1596464716121-8b706cfe986f?q=80&w=1200&auto=format&fit=crop" alt="Bambini che giocano in natura" style="width:100%;height:auto;border-radius:12px;display:block"/>
-        </picture>
-      </div>
-    </section>
+                if (!toggle || !menu) return;
 
-    <!-- IL CUORE -->
-    <section id="cuore">
-      <div class="grid">
-        <div class="card" style="grid-column:span 7">
-          <h2>Il cuore</h2>
-          <p>Roberta e Roberto hanno aperto questa casa/famiglia nel maggio 2003 a Cornuda, colmando un vuoto nei servizi per le famiglie; nel 2008, in collaborazione con l’Amministrazione Comunale, si trasferiscono a Crocetta del Montello, in località Nogarè. Finalmente una struttura laica dove i genitori che lavorano possono affidare il loro bambino in tutta serenità. Gli spazi sono accoglienti e a dimensione di bambino con educatrici amorevoli e attente, capaci di accogliere e valorizzare le esigenze di ogni famiglia. Un asilo che non chiude durante il periodo estivo e che accompagna anche i bambini di altre scuole, con compiti e laboratori pomeridiani.</p>
-        </div>
-        <div class="card" style="grid-column:span 5">
-          <img src="https://images.unsplash.com/photo-1566921718657-0b4f1e019f75?q=80&w=1200&auto=format&fit=crop" alt="Cerchio dei bambini" style="width:100%;height:320px;object-fit:cover;border-radius:12px" />
-        </div>
-      </div>
-    </section>
+                toggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    menu.classList.toggle('attivo');
+                });
 
-    <!-- FILOSOFIA -->
-    <section id="filosofia">
-      <div class="grid">
-        <div class="card" style="grid-column:span 12">
-          <h2>La filosofia</h2>
-          <p>L’ambiente, le persone e le situazioni che circondano i bambini hanno sempre lasciato segni importanti: il nostro lavoro è la nostra passione e ha l’obiettivo di stabilire relazioni sincere, fatte di ascolto e di empatia, e di promuovere il benessere che solo una relazione profonda permette di realizzare. <strong>Cura, Amore e Natura</strong>: sono le cose che non mancheranno mai ai vostri piccoli.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVIZI -->
-    <section id="servizi" class="services">
-      <h2>Servizi</h2>
-      <div class="grid">
-        <div class="card" style="grid-column:span 7">
-          <ul>
-            <li>Assistenza malattia diurna</li>
-            <li>Servizio di assistenza domiciliare</li>
-            <li>Consulenze psicopedagogiche</li>
-            <li>Corsi di formazione per i genitori</li>
-            <li>Centro estivo (anche per bambini esterni)</li>
-            <li>Incontri con specialisti su tematiche di famiglia e infanzia</li>
-            <li>Affitto sala 150 m² per feste di compleanno ed eventi (con animazione)</li>
-            <li>Assistenza domiciliare post parto</li>
-            <li>Massaggio del bimbo/a</li>
-            <li>Laboratori nel fine settimana su iscrizione</li>
-            <li>Gite didattiche</li>
-          </ul>
-        </div>
-        <div class="card" style="grid-column:span 5">
-          <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1530541930197-ff16ac917f23?q=80&w=1200&auto=format&fit=crop" alt="Gioco nel prato" />
-            <img src="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?q=80&w=1200&auto=format&fit=crop" alt="Bimbi con gli animali" />
-            <img src="https://images.unsplash.com/photo-1458071103672-6e5f10a3ad82?q=80&w=1200&auto=format&fit=crop" alt="Laboratorio creativo" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- I NUMERI -->
-    <section id="numeri" class="numbers">
-      <h2>I numeri</h2>
-      <div class="grid">
-        <div class="card" style="grid-column:span 12">
-          <p class="pill">Personale sempre formato e aggiornato</p>
-          <p class="pill">Micronido (3‑36 mesi) accreditato in Regione Veneto con 3 sezioni: lattanti, semidivezzi, divezzi</p>
-          <p class="pill">Continuità (3‑6 anni) con maestre abilitate all’insegnamento e laureate in psicologia e pedagogia</p>
-          <p class="pill">Equipe: pedagogiste, educatrici, ausiliarie, psicologhe, logopediste, puericultrici, educatori professionali</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTATTI -->
-    <section id="contatti">
-      <div class="grid">
-        <div class="card" style="grid-column:span 6">
-          <h2>Contatti</h2>
-          <p><strong>Indirizzo:</strong> Via Caodevilla, 8/C – 31035 Crocetta del Montello (TV) – Nogarè</p>
-          <p><strong>Telefono:</strong> <a href="tel:+393387042993">Roberta 338 7042993</a> • <a href="tel:+393473494966">Francesco 347 3494966</a></p>
-          <p><strong>Email:</strong> <a href="mailto:nidocasadialice@gmail.com">nidocasadialice@gmail.com</a></p>
-          <p><strong>Orari:</strong> Lunedì – Venerdì, 7:00 – 18:30</p>
-          <div class="cta">
-            <a class="btn primary" href="tel:+393387042993">Chiama ora</a>
-            <a class="btn ghost" href="mailto:nidocasadialice@gmail.com">Invia email</a>
-          </div>
-        </div>
-        <div class="card" style="grid-column:span 6">
-          <iframe title="Mappa" src="https://www.google.com/maps?q=Via%20Caodevilla%2C%208%2FC%2C%20Crocetta%20del%20Montello&output=embed" width="100%" height="340" style="border:0;border-radius:12px"></iframe>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      <div style="display:flex;align-items:center;gap:14px;margin-bottom:8px">
-        <svg class="logo" viewBox="0 0 100 100" aria-hidden="true">
-          <rect x="20" y="40" width="60" height="45" rx="6" fill="var(--sun)" stroke="#efc33f"/>
-          <polygon points="15,42 50,15 85,42" fill="var(--accent)"/>
-          <rect x="45" y="58" width="12" height="27" rx="3" fill="#2bb39a"/>
-          <circle cx="32" cy="62" r="6" fill="#fff"/>
-          <circle cx="68" cy="62" r="6" fill="#fff"/>
-        </svg>
-        <strong>La Casa di Alice</strong>
-      </div>
-      <small>© <span id="year"></span> La Casa di Alice – Crocetta del Montello (TV). Tutti i diritti riservati.</small>
-    </div>
-    <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
-  </footer>
-</body>
+                menu.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') {
+                        menu.classList.remove('attivo');
+                    }
+                });
+            });
+        </script>
+    </body>
 </html>

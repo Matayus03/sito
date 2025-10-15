@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Oregano:ital@0;1&display=swap');
+
+html {
+    overflow: auto;
+}
+
+body {
+    overflow: auto;
+    font-family: Oregano;
+    background-image: url("/home/kali/Desktop/ImmaginiSito/sfondo.png");
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color:white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.logo {
+    height: 75px;
+    width: auto; 
+}
+
+.titolo {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    color: #47c2a8;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+.link:hover {
+    background-color: rgba(61, 162, 148, 0.1);
+}
+
+.logo-titolo {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.logo-titolo:hover {
+    background-color: rgba(61, 162, 148, 0.1);
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.barra ul {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    padding: 15px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e6f2ee;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 0 8px 22px rgba(20,90,70,0.06);
+    font-size: 20px;
+}
+
+.card h2 {
+    font-size: 40px;
+}
+
+picture img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.lead {
+    display: inline-block;
+    border: 1px solid #47c2a8;
+    padding: 3px 6px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.lead2 {
+    margin-left: 5px;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid #47c2a8;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: white;
+    text-decoration: none;
+    color: #47c2a8;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #47c2a8;
+    color: white
+}
+
+.cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.tel {
+    color: #47c2a8;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 28px;
+    padding: 54px 0;
+}
+
+
+.hero h1 {
+    font-size: 56px;
+    margin: 0 0 8px;
+}
+
+.hero p.lead {
+    font-size: 20px;
+    margin: 4px 0;
+}
+
+.wrap {
+    max-width: 1100px;
+    width: 75%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 16px 0 26px;
+}
+
+.badge {
+    border: 1px solid #47c2a8;
+    background-color: white;
+    border-radius: 15px;
+    padding: 3px 6px;
+}
+
+section {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    /* box-shadow: 0 8px 22px rgba(20,90,70,0.06); */
+}
+
+/* section:first-of-type {
+    background-color: white;
+    border-radius: 15px;
+    border-bottom: 1px solid #e8f3ef; 
+} */
+
+.services .card ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.services .card li {
+    margin: 8px 0;
+}
+
+footer {
+    background-color: #0f2a24;
+    color: #eafff7;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+main {
+    border-radius: 15px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #47c2a8;
+    margin-left: auto;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.parole-importanti {
+    display: inline-block;
+    border: 1px solid #47c2a8;
+    padding: 3px 6px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+/* Visualizzazione su telefono */
+
+@media (max-width: 600px) {
+
+    .wrap {
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 12px;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        height: 55px;
+    }
+
+    .titolo {
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    .logo-titolo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        padding: 10px 0;
+    }
+
+    .barra ul li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .barra {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        padding: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 18px;
+        z-index: 2000;
+    }
+    
+    .menu {
+        flex-direction: column;
+        background-color: white;
+        align-items: center;
+        width: 50%;
+        margin: 60px 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 8px 0;
+        z-index: 1500;
+
+        max-height: 0;
+        max-width: 0;
+        overflow: hidden;
+        transition: max-height 0.6s ease;
+    }
+
+    .menu.attivo {
+        align-items: center;
+        max-height: 500px;
+        max-width: 200px;
+    }
+
+    .menu li {
+        width: 100%;
+        align-items: center;
+    }
+
+    .link {
+        display: block;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p.lead {
+        font-size: 16px;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .card {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    .badges, .cta {
+        justify-content: center;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    footer p {
+        font-size: 14px;
+        margin: 6px 0;
+    }
+}
+
+/* visualizzazione su Tablet */
+
+@media (max-width: 900px) {
+    .wrap {
+        width: 85%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .logo-titolo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .barra ul {
+        gap: 14px;
+    }
+}
