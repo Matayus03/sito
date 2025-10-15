@@ -7,7 +7,7 @@ html {
 body {
     overflow: auto;
     font-family: Oregano;
-    background-image: url("/home/kali/Desktop/ImmaginiSito/sfondo.png");
+    background-image: url("ImmaginiSito/sfondo.png");
     background-attachment: fixed;
     margin: 0;
     padding: 0;
