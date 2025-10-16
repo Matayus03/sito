@@ -7,7 +7,7 @@ html {
 body {
     overflow: auto;
     font-family: Oregano;
-    background-image: url("ImmaginiSito/sfondo.png");
+    background-image: url("/home/kali/Desktop/ImmaginiSito/sfondo.png");
     background-attachment: fixed;
     margin: 0;
     padding: 0;
@@ -87,6 +87,7 @@ header {
     padding: 18px;
     box-shadow: 0 8px 22px rgba(20,90,70,0.06);
     font-size: 20px;
+    text-align: center;
 }
 
 .card h2 {
@@ -103,14 +104,9 @@ picture img {
     display: inline-block;
     border: 1px solid #47c2a8;
     padding: 3px 6px;
-    margin: 5px;
     border-radius: 15px;
     background-color: white;
-}
-
-.lead2 {
-    margin-left: 5px;
-    margin: auto;
+    transform: translateY(20px);
 }
 
 .btn {
@@ -238,6 +234,41 @@ main {
     margin: 5px;
     border-radius: 15px;
     background-color: white;
+}
+
+#galleria .card {
+    grid-column: span 12;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.galleria-immagini {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.galleria-immagini img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out, object-fit 0.3s ease;
+    box-shadow: 0.3s ease;
+    cursor: pointer;
+}
+
+.galleria-immagini img:hover {
+    object-fit: contain;
+    transform: scale(1.50);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#cuore img {
+    align-items: center;
+    width: 40%;
+    height: 200px;
+    object-fit: contain;
 }
 
 /* Visualizzazione su telefono */
