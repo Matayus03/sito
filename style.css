@@ -7,7 +7,7 @@ html {
 body {
     overflow: auto;
     font-family: Oregano;
-    background-image: url("/home/kali/Desktop/ImmaginiSito/giustosfondo.jpg");
+    background-image: url("ImmaginiSito/giustosfondo.jpg");
     background-attachment: fixed;
     background-size: contain;
     margin: 0;
