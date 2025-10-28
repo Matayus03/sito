@@ -11,7 +11,7 @@
           <header>
             <div class="barra">
                 <a class="logo-titolo" href="#top">
-                <img src="ImmaginiSito/logonudo7.png" alt="Logo" class="logo">
+                <img src="/home/kali/Desktop/ImmaginiSito/logonudo7.png" alt="Logo" class="logo">
                 <span class="titolo">La Casa di Alice</span>
                 </a>
                 <button class="menu-toggle" aria-label="Apri menu">☰</button>
@@ -19,9 +19,9 @@
                     <li><a href="#cuore" class="link">Il Cuore</a></li>
                     <li><a href="#filosofia" class="link">Filosofia</a></li>
                     <li><a href="#servizi" class="link">Servizi</a></li>
-                    <li><a href="#numeri" class="link">I Numeri</a></li>
                     <li><a href="#galleria" class="link">Galleria</a></li>
                     <li><a href="#contatti" class="link">Contatti</a></li>
+                    <li><a href="#lavora" class="link">Lavora con noi</a></li>
                 </ul>
             </div>
           </header>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="card">
                     <picture>
-                        <!-- AGGIUNGERE FOTO--> <img src="ImmaginiSito/orto2.jpg">
+                        <!-- AGGIUNGERE FOTO--> <img src="/home/kali/Desktop/ImmaginiSito/orto2.jpg">
                     </picture>
                 </div>
             </section>
@@ -62,11 +62,11 @@
                     </div>
                     <div class="card" style="grid-column:span 12">
                         <p>Evento del 2019</p>
-                        <img src="ImmaginiSito/PCrepet.png">
-                        <img src="ImmaginiSito/foto.jpg">
+                        <img src="/home/kali/Desktop/ImmaginiSito/PCrepet.png">
+                        <img src="/home/kali/Desktop/ImmaginiSito/foto.jpg">
                         <p>Evento del 2023</p>
-                        <img src="ImmaginiSito/bruzzone3.jpg">
-                        <img src="ImmaginiSito/bruzzone.jpg">
+                        <img src="/home/kali/Desktop/ImmaginiSito/bruzzone3.jpg">
+                        <img src="/home/kali/Desktop/ImmaginiSito/bruzzone.jpg">
                     </div>
             </section>
 
@@ -122,18 +122,18 @@
                     <div class="card" style="grid-column:span 12;">
                         <h2>Galleria</h2>
                             <div class="galleria-immagini">
-                                <img src="ImmaginiSito/bosco.png">
-                                <img src="ImmaginiSito/trattore.jpeg">
-                                <img src="ImmaginiSito/disegno.jpeg">
-                                <img src="ImmaginiSito/mucche.jpeg">
-                                <img src="ImmaginiSito/api.png">
-                                <img src="ImmaginiSito/lattebusche.jpg">
-                                <img src="ImmaginiSito/erba.png">
-                                <img src="ImmaginiSito/fotoalto1.jpg">
-                                <img src="ImmaginiSito/fotoalto2.jpg">
-                                <img src="ImmaginiSito/giardino.jpg">
-                                <img src="ImmaginiSito/stivali.jpg">
-                                <img src="ImmaginiSito/cerchofiorisfocato.png">
+                                <img src="/home/kali/Desktop/ImmaginiSito/bosco.png">
+                                <img src="/home/kali/Desktop/ImmaginiSito/trattore.jpeg">
+                                <img src="/home/kali/Desktop/ImmaginiSito/disegno.jpeg">
+                                <img src="/home/kali/Desktop/ImmaginiSito/mucche.jpeg">
+                                <img src="/home/kali/Desktop/ImmaginiSito/api.png">
+                                <img src="/home/kali/Desktop/ImmaginiSito/lattebusche.jpg">
+                                <img src="/home/kali/Desktop/ImmaginiSito/erba.png">
+                                <img src="/home/kali/Desktop/ImmaginiSito/fotoalto1.jpg">
+                                <img src="/home/kali/Desktop/ImmaginiSito/fotoalto2.jpg">
+                                <img src="/home/kali/Desktop/ImmaginiSito/giardino.jpg">
+                                <img src="/home/kali/Desktop/ImmaginiSito/stivali.jpg">
+                                <img src="/home/kali/Desktop/ImmaginiSito/cerchofiorisfocato.png">
                             </div>
                     </div>
                 </div>
@@ -157,12 +157,50 @@
                     </div>
                 </div>
             </section>
+
+            <section id="lavora">
+                <div class="grid">
+                    <div class="card" style="grid-column:span 12">
+                        <h2>Lavora con noi</h2>
+                        <p>Se ti riconosci nei nostri valori e desideri contribuire al percorso educativo della Casa di Alice, consegna il tuo curriculum direttamente in struttura.
+                            Oppure inviaci la tua candidatura.<br>
+                            <br>Queste sono le figure professionali che ricerchiamo:
+                            <br>• Educatrici ed educatori con laurea in Scienze dell'Educazione o titoli affini, con specializzazione nei rami dell'infanzia.
+                            <br>• Liberi professionisti che collaborino con l'asilo in ambiti collegati all'educazione: psicologia, logopedia, musica, motricità e arte.
+                            <br>• Personale ausiliario.
+                        </p>
+                        <form action="https://formsubmit.co/nidocasadialice@gmail.com" method="POST">
+                            <div class="form-group">
+                                <label for="nome">Nome e Cognome</label>
+                                <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="indirzzo email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="messaggio">Messaggio</label>
+                                <textarea id="messaggio" name="messaggio" rows="5" placeholder="Scrivi il tuo messaggio" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cv">Allega il tuo CV (solo .pdf)</label>
+                                <input type="file" id="cv" name="cv" accept=".pdf">
+                            </div>
+                            
+                            <button type="submit" class="btn primary">Invia candidatura</button>
+                        </form>
+                    </div>
+                </div>    
+            </section>
           </main>
 
           <footer>
             <div class="wrap">
                 <div style="display:flex;align-items:center;gap:14px;margin-bottom:8px">
-                    <img src="ImmaginiSito/logonudo7.png" alt="Logo" class="logo">
+                    <img src="/home/kali/Desktop/ImmaginiSito/logonudo7.png" alt="Logo" class="logo">
                     <strong>La Casa di Alice</strong>
                 </div>
                 <small>© <span id="year"></span> La Casa di Alice - Crocetta del Montello (TV). Tutti i diritti riservati.</small>

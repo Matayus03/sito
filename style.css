@@ -7,8 +7,9 @@ html {
 body {
     overflow: auto;
     font-family: Oregano;
-    background-image: url("ImmaginiSito/sfondo.png");
+    background-image: url("/home/kali/Desktop/ImmaginiSito/giustosfondo.jpg");
     background-attachment: fixed;
+    background-size: contain;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -269,6 +270,67 @@ main {
     width: 40%;
     height: 200px;
     object-fit: contain;
+}
+
+#lavora {
+    padding: 56px 0;
+}
+
+#lavora h2 {
+    color: #47c2a8;
+    margin-bottom: 10px;
+}
+
+#lavora p {
+    font-size: 18px;
+    color: inherit;
+    margin-bottom: 24px;
+}
+
+#lavora form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#lavora .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#lavora label {
+    font-weight: bold;
+    color: inherit;
+    margin-bottom: 6px;
+}
+
+#lavora input, #lavora textarea {
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid inherit;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: #f9fdfa;
+    transition: all 0.2s ease;
+}
+
+#lavora input:focus, #lavora textarea:focus {
+    border-color: #47c2a8;
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(71, 194, 168, 0.3);
+}
+
+#lavora input[type="file"] {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+}
+
+#lavora button {
+    align-self: center;
+    font-family: inherit;
+    font-size: 18px;
 }
 
 /* Visualizzazione su telefono */
