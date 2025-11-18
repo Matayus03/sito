@@ -7,7 +7,7 @@ html {
 body {
     overflow: auto;
     font-family: Oregano;
-    background-image: url("ImmaginiSito/giustosfondo.jpg");
+    background-image: url("/home/kali/Desktop/ImmaginiSito/verosfondo.png");
     background-attachment: fixed;
     background-size: contain;
     margin: 0;
@@ -23,7 +23,7 @@ header {
 }
 
 .logo {
-    height: 75px;
+    height: 90px;
     width: auto; 
 }
 
@@ -192,7 +192,8 @@ section {
 
 .services .card ul {
     margin: 0;
-    padding-left: 18px;
+    padding-left: 20px;
+    list-style-position: inside;
 }
 
 .services .card li {
@@ -277,7 +278,7 @@ main {
 }
 
 #lavora h2 {
-    color: #47c2a8;
+    color: inherit;
     margin-bottom: 10px;
 }
 
@@ -300,7 +301,6 @@ main {
 
 #lavora label {
     font-weight: bold;
-    color: inherit;
     margin-bottom: 6px;
 }
 
@@ -322,9 +322,24 @@ main {
 }
 
 #lavora input[type="file"] {
-    background-color: transparent;
-    border: none;
-    font-size: 14px;
+    display: none;
+}
+
+.custom-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #47c2a8;
+    color: #47c2a8;
+    text-decoration: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.custom-btn:hover {
+    background-color: #47c2a8;
+    color: white;
 }
 
 #lavora button {
